@@ -4,42 +4,64 @@ A template to deploy [JSON Server](https://github.com/typicode/json-server) to [
 
 Demo from this repository: 
 
-1. https://json-server-in.vercel.app
-2. https://json-server-in.vercel.app/api/posts
+1. https://streaming-json.vercel.app/
+2. https://streaming-json.vercel.app/todos
+3. https://streaming-json.vercel.app/destaques
+4. https://streaming-json.vercel.app/filmes
+5. https://streaming-json.vercel.app/series
+6. https://streaming-json.vercel.app/animes
 
-![Powered by Vercel](https://images.ctfassets.net/e5382hct74si/78Olo8EZRdUlcDUFQvnzG7/fa4cdb6dc04c40fceac194134788a0e2/1618983297-powered-by-vercel.svg)
 
 ### How to use
 
-1. Click "**Use this template**" or clone this repository.
-2. Update or use the default [`db.json`](./db.json) in the repository.
-3. Sign Up or login into [Vercel](https://vercel.com).
-4. From the Vercel dashboard, click "**+ New Project**" then "**Import**" your repository.
-5. In the "**Configure Project**" screen, leave everything default and click "**Deploy**".
-6. Wait until deployment is done, and your own JSON server is ready to serve!
-
-## Default `db.json`
 
 ```json
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+  "todos": [
+   {
+    "id": "1",
+    "nome": " nome ",
+    "card": " link da imagem ",
+    "banner": "link da imagem ",
+    "sinopse": " sinopse ",
+    "trailer": " link do iframe ",
+    "ano": " ano ",
+    "temporadas": " n de temporadas",
+    "classificacao": " L , 10 ,12 ,14 , 16 ou 18 ",
+    "generos": " generos ",
+    "elenco": " elenco "
+  }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+  "filmes": [
+  {
+    "id": "1",
+    "nome": " nome ",
+    "card": " link da imagem ",
+    "banner": "link da imagem ",
+    "sinopse": " sinopse ",
+    "trailer": " link do iframe ",
+    "ano": " ano ",
+    "duracao": " tempo de duraçao ",
+    "classificacao": " L , 10 ,12 ,14 , 16 ou 18 ",
+    "generos": " generos ",
+    "elenco": " elenco "
+  }
   ],
-  "profile": { "name": "typicode" }
+  "animes":
+  {
+    "id": "1",
+    "nome": " nome ",
+    "card": " link da imagem ",
+    "banner": "link da imagem ",
+    "sinopse": " sinopse ",
+    "trailer": " link do iframe ",
+    "ano": " ano ",
+    "episodios": " n de episodios",
+    "classificacao": " L , 10 ,12 ,14 , 16 ou 18 ",
+    "generos": " generos ",
+    "elenco": " elenco "
+  }
 }
 ```
 
-## Enable write operations
 
-By default, only GET operation is allowed, thanks to the contribution by [@VicAv99](https://www.github.com/VicAv99) at [#6](https://github.com/kitloong/json-server-vercel/issues/6), we can now enable write operations as well.
-
-You can find the example code in [`api/server.js`](./api/server.js).
-
-## Reference
-
-1. https://github.com/typicode/json-server
-2. https://vercel.com
-3. https://shadowsmith.com/how-to-deploy-an-express-api-to-vercel
